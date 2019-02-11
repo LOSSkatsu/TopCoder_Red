@@ -1,9 +1,10 @@
 #include <iostream>
 #include <string>
+#include <algorithm>
 
 using namespace std;
 
-int grid[100][100] = {false};
+bool grid[100][100] = {false};
 int dx[] = {1, -1,  0, 0};
 int dy[] = {0,  0, -1, 1};
 double prob[4];
@@ -16,7 +17,7 @@ public:
 		prob[0] = east  / 100.0 ;
 		prob[1] = west  / 100.0 ; 
 		prob[2] = south / 100.0 ;
-		prob[4] = north / 100.0 ;
+		prob[3] = north / 100.0 ;
 		
 		return dfs(50, 50, n);
 	}

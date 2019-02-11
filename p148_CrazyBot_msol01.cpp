@@ -35,7 +35,7 @@ public:
 		
 		for(int i=0; i<4; i++)
 		{
-			return ret += dfs(x+dx[i], y+dy[i], n-1)*prob[i];
+			ret += dfs(x+dx[i], y+dy[i], n-1)*prob[i];
 		}
 		
 		grid[x][y] = false;

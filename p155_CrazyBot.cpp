@@ -43,7 +43,7 @@ public:
 
 int main(void)
 {
-	int n = 1;
+	int n = 2;
 	int east = 25;
 	int west = 25;
 	int south = 25;
